@@ -34,7 +34,7 @@ from fastapi.middleware.cors import CORSMiddleware
 load_dotenv()
 
 # Use environment variables
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://blogi_o5fm_user:6VTcsl8grKAR802p6T8H7eT0lwsetfl9@dpg-cv5d6b56l47c73d3na50-a/blogi_o5fm")
+DATABASE_URL = os.getenv("DATABASE_URL")
 print("DATABASE_URL:", os.getenv("DATABASE_URL"))
 SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = os.getenv("ALGORITHM")
